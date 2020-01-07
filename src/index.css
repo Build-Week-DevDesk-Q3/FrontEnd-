@@ -11,7 +11,7 @@ body {
 }
 
 .isHidden {
-  transform: translateX(-255px);
+  transform: translateY(-60px);
 }
 
 .profile {
@@ -20,4 +20,9 @@ body {
 
 .main-links {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.profile-pic {
+  /* height: 25%;
+  width: 25%; */
 }

@@ -14,7 +14,6 @@ import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
 const MainWrapper = styled.div`
-  color: #e6a522;
   font-family: Roboto;
   height: 100%;
 `;
@@ -23,7 +22,7 @@ const App = () => {
   const [showNav, toggleShowNav] = useState(true);
   return (
     <MainWrapper>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
       <Navigation showNav={showNav} />
       <Switch>
         <Route path="/dashboard" component={Dashboard} />
