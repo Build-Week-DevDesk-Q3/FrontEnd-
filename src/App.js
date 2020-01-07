@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import HeaderComponent from "./components/HeaderBar";
 import {
@@ -13,26 +13,28 @@ import {
 import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
-const NavText = styled.div`
+const MainWrapper = styled.div`
   color: #e6a522;
+  font-family: Roboto;
+  height: 100%;
 `;
 
 const App = () => {
+  const [showNav, toggleShowNav] = useState(true);
   return (
-    <NavText>
+    <MainWrapper>
       <HeaderComponent></HeaderComponent>
-      <div>
-        <Navigation />
-        <Switch>
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/help-student" component={HelpStudent} />
-          <Route path="/open-tickets" component={OpenTickets} />
-          <Route path="/assigned-tickets" component={AssignedTickets} />
-          <Route path="/logout-page" component={LogoutPage} />
-          <Route path="/student-account" component={StudentAccount} />
-        </Switch>
-      </div>
-    </NavText>
+      <Navigation showNav={showNav} />
+      <Switch>
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/help-student" component={HelpStudent} />
+        <Route path="/open-tickets" component={OpenTickets} />
+        <Route path="/assigned-tickets" component={AssignedTickets} />
+        <Route path="/logout-page" component={LogoutPage} />
+        <Route path="/student-account" component={StudentAccount} />
+      </Switch>
+      <button onClick={() => toggleShowNav(!showNav)}>test</button>
+    </MainWrapper>
   );
 };
 
