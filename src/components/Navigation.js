@@ -27,7 +27,12 @@ const Navigation = () => {
     <NavWrapper>
       <div className="profile navSection">
         <div className="profile-pic">
-          <i className="material-icons">account_box</i>
+          <img
+            style={{ margin: "0 0 20px 0" }}
+            height="65px"
+            width="65px"
+            src={require(`../assets/account-box.png`)}
+          />
         </div>
         <div className="arrowToggle">
           <p>Hello: Student Name!</p>

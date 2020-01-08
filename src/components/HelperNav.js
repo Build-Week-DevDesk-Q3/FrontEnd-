@@ -22,23 +22,31 @@ const HelperStyledLink = styled(Link)`
 `;
 
 const HelperNav = () => {
-  const [showNav, toggleShowNav] = useState(true);
+  const [showHelperNav, toggleShowHelperNav] = useState(true);
   return (
     <HelperNavWrapper>
       <div className="profile navSection">
         <div className="profile-pic">
-          <i className="material-icons">account_box</i>
+          <img
+            style={{ margin: "0 0 20px 0" }}
+            height="65px"
+            width="65px"
+            src={require(`../assets/account-box.png`)}
+          />
         </div>
         <div className="arrowToggle">
           <p>Hello: Helper Name!</p>
-          <i className="material-icons" onClick={() => toggleShowNav(!showNav)}>
+          <i
+            className="material-icons"
+            onClick={() => toggleShowHelperNav(!showHelperNav)}
+          >
             arrow_drop_down
           </i>
         </div>
       </div>
       <div
         className={
-          showNav
+          showHelperNav
             ? "main-links isVisible navSection"
             : "main-links isHidden navSection"
         }
