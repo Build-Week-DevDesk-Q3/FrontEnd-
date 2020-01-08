@@ -31,8 +31,8 @@ const Navigation = () => {
             style={{ margin: "0 0 30px 0" }}
             height="65px"
             width="65px"
-            alt=""
             src={require(`../assets/account-box.png`)}
+            alt=""
           />
         </div>
         <div className="arrowToggle">
@@ -88,8 +88,8 @@ const Navigation = () => {
             style={{ margin: "0 2px" }}
             height="22px"
             width="22px"
-            alt=""
             src={require(`../assets/lambda-logo.jpg`)}
+            alt=""
           />
           <StyledLink to="/student-account">Student Account</StyledLink>
         </div>
