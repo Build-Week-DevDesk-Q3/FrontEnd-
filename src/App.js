@@ -8,9 +8,9 @@ import {
   OpenTickets,
   AssignedTickets,
   LogoutPage,
-  StudentAccount,
-  HelperHeaderComponent,
-  HelperNav
+  StudentAccount
+  // HelperHeaderComponent,
+  // HelperNav
 } from "./components";
 import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";

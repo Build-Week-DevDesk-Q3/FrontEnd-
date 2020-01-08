@@ -31,6 +31,7 @@ const HelperNav = () => {
             style={{ margin: "0 0 20px 0" }}
             height="65px"
             width="65px"
+            alt=""
             src={require(`../assets/account-box.png`)}
           />
         </div>
@@ -88,6 +89,7 @@ const HelperNav = () => {
             style={{ margin: "0 2px" }}
             height="22px"
             width="22px"
+            alt=""
             src={require(`../assets/lambda-logo.jpg`)}
           />
           <HelperStyledLink to="/student-account">

@@ -28,9 +28,10 @@ const Navigation = () => {
       <div className="profile navSection">
         <div className="profile-pic">
           <img
-            style={{ margin: "0 0 20px 0" }}
+            style={{ margin: "0 0 30px 0" }}
             height="65px"
             width="65px"
+            alt=""
             src={require(`../assets/account-box.png`)}
           />
         </div>
@@ -87,6 +88,7 @@ const Navigation = () => {
             style={{ margin: "0 2px" }}
             height="22px"
             width="22px"
+            alt=""
             src={require(`../assets/lambda-logo.jpg`)}
           />
           <StyledLink to="/student-account">Student Account</StyledLink>
