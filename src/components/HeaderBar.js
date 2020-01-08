@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const HeaderDiv = styled.div`
@@ -22,8 +22,6 @@ const HeaderText = styled.div`
 `;
 
 function HeaderComponent() {
-  const [showNav, toggleShowNav] = useState(true);
-
   return (
     <HeaderDiv>
       <i className="material-icons">menu</i>

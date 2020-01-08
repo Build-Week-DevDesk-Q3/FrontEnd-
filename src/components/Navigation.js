@@ -30,7 +30,7 @@ const Navigation = () => {
           <i className="material-icons">account_box</i>
         </div>
         <div className="arrowToggle">
-          <p>Hello: Helper Name!</p>
+          <p>Hello: Student Name!</p>
           <i className="material-icons" onClick={() => toggleShowNav(!showNav)}>
             arrow_drop_down
           </i>
@@ -62,10 +62,12 @@ const Navigation = () => {
           </StyledLink>
         </div>
         <div className="navWrapperDiv">
-          <StyledLink to="/assigned-tickets">
-            <i className="material-icons">assignment</i>
-            Assigned Tickets
-          </StyledLink>
+          <div className="studentUI">
+            <StyledLink to="/assigned-tickets">
+              <i className="material-icons">assignment</i>
+              Assigned Tickets
+            </StyledLink>
+          </div>
         </div>
       </div>
       <div className="account-StyledLinks navSection">

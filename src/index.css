@@ -38,6 +38,15 @@ body {
   align-items: center;
 }
 
+.studentUI {
+  display: none;
+}
+
+.profile-pic {
+  text-align: center;
+
+}
+
 /* .navWrapperDiv:hover {
   color: orange;
   text-decoration: none;
