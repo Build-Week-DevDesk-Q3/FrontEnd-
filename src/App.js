@@ -19,11 +19,10 @@ const MainWrapper = styled.div`
 `;
 
 const App = () => {
-  const [showNav, toggleShowNav] = useState(true);
   return (
     <MainWrapper>
       <HeaderComponent />
-      <Navigation showNav={showNav} />
+      <Navigation />
       <Switch>
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/help-student" component={HelpStudent} />
@@ -32,7 +31,6 @@ const App = () => {
         <Route path="/logout-page" component={LogoutPage} />
         <Route path="/student-account" component={StudentAccount} />
       </Switch>
-      <button onClick={() => toggleShowNav(!showNav)}>test</button>
     </MainWrapper>
   );
 };

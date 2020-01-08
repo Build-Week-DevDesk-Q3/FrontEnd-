@@ -10,19 +10,35 @@ body {
   background-color: #FBFCFD;
 }
 
-.isHidden {
-  transform: translateY(-60px);
-}
-
-.profile {
-  border-bottom: 1px solid #e5e5e5;
-}
-
+.profile,
 .main-links {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.profile-pic {
-  /* height: 25%;
-  width: 25%; */
+.isHidden {
+  display: none;
 }
+
+.isVisible {
+  display: block;
+}
+
+.arrowToggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navSection {
+  padding: 20px;
+}
+
+.navWrapperDiv {
+  display: flex;
+  align-items: center;
+}
+
+/* .navWrapperDiv:hover {
+  color: orange;
+  text-decoration: none;
+} */

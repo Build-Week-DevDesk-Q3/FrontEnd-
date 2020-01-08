@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -11,52 +11,77 @@ const NavWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)`
+  display: flex;
   color: #000036;
   text-decoration: none;
-  &:hover 
+  margin: 10px 0;
+  &:hover {
     color: orange;
+    text-decoration: none;
+  }
 `;
 
-const Navigation = props => {
+const Navigation = () => {
+  const [showNav, toggleShowNav] = useState(true);
   return (
-    <NavWrapper className={props.showNav ? "isVisible" : "isHidden"}>
-      <div className="profile">
+    <NavWrapper>
+      <div className="profile navSection">
         <div className="profile-pic">
           <i className="material-icons">account_box</i>
         </div>
-        <p>Hello: Helper Name!</p>
-        <i className="material-icons">arrow_drop_down</i>
+        <div className="arrowToggle">
+          <p>Hello: Helper Name!</p>
+          <i className="material-icons" onClick={() => toggleShowNav(!showNav)}>
+            arrow_drop_down
+          </i>
+        </div>
       </div>
-      <div className="main-links">
-        <div>
+      <div
+        className={
+          showNav
+            ? "main-links isVisible navSection"
+            : "main-links isHidden navSection"
+        }
+      >
+        <div className="navWrapperDiv">
           <StyledLink to="/dashboard">
-            <i className="material-icons">dashboard</i>Dashboard
+            <i className="material-icons">dashboard</i>
+            Dashboard
           </StyledLink>
         </div>
-        <div>
+        <div className="navWrapperDiv">
           <StyledLink to="/help-student">
-            <i className="material-icons">list_alt</i>Create Help Ticket
+            <i className="material-icons">list_alt</i>
+            Create Help Ticket
           </StyledLink>
         </div>
-        <div>
+        <div className="navWrapperDiv">
           <StyledLink to="/open-tickets">
-            <i className="material-icons">assignment</i>Open Tickets
+            <i className="material-icons">assignment</i>
+            Open Tickets
           </StyledLink>
         </div>
-        <div>
+        <div className="navWrapperDiv">
           <StyledLink to="/assigned-tickets">
-            <i className="material-icons">assignment</i>Assigned Tickets
+            <i className="material-icons">assignment</i>
+            Assigned Tickets
           </StyledLink>
         </div>
       </div>
-      <div className="account-StyledLinks">
-        <div>
+      <div className="account-StyledLinks navSection">
+        <div className="navWrapperDiv">
           <StyledLink to="/logout-page">
-            <i className="material-icons">settings_applications</i>Log Out
+            <i className="material-icons">settings_applications</i>
+            Log Out
           </StyledLink>
         </div>
-        <div>
-          {/* <img src={require(`./assets/lambda-logo.jpg`)} /> */}
+        <div className="navWrapperDiv">
+          <img
+            style={{ margin: "0 2px" }}
+            height="22px"
+            width="22px"
+            src={require(`../assets/lambda-logo.jpg`)}
+          />
           <StyledLink to="/student-account">Student Account</StyledLink>
         </div>
       </div>

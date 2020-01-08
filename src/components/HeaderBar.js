@@ -26,9 +26,7 @@ function HeaderComponent() {
 
   return (
     <HeaderDiv>
-      <i onClick={() => toggleShowNav(!showNav)} className="material-icons">
-        menu
-      </i>
+      <i className="material-icons">menu</i>
       <HeaderText>DevDesk Queue</HeaderText>
       <i className="material-icons">search</i>
     </HeaderDiv>
