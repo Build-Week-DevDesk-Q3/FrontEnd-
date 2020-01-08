@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import HeaderComponent from "./components/HeaderBar";
 import {
@@ -8,7 +8,9 @@ import {
   OpenTickets,
   AssignedTickets,
   LogoutPage,
-  StudentAccount
+  StudentAccount,
+  HelperHeaderComponent,
+  HelperNav
 } from "./components";
 import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
