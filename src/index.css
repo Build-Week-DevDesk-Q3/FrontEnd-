@@ -46,6 +46,13 @@ body {
   text-align: center;
 }
 
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
 /* .navWrapperDiv:hover {
   color: orange;
   text-decoration: none;
