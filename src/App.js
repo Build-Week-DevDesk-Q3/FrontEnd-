@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <header className="App-header">
       <BrowserRouter>
-
         <Route exact path="/" component={SignIn} />
         <Route path ="/signup" component={SignUp} />
       </BrowserRouter>

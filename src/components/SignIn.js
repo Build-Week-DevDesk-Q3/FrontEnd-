@@ -115,3 +115,13 @@ export default function SignIn() {
     </Container>
   );
 }
+
+function validateForm() {
+  var x = document.getElementById["email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+
