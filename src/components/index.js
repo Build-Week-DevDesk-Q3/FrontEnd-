@@ -7,6 +7,9 @@ import LogoutPage from "./LogoutPage";
 import StudentAccount from "./StudentAccount";
 import HelperHeaderComponent from "./HelperHeader";
 import HelperNav from "./HelperNav";
+import SearchForm from "./SearchForm";
+import CharacterCard from "./CharacterCard";
+import CharacterList from "./CharacterList";
 
 export {
   Dashboard,
@@ -17,5 +20,8 @@ export {
   LogoutPage,
   StudentAccount,
   HelperHeaderComponent,
-  HelperNav
+  HelperNav,
+  CharacterCard,
+  CharacterList,
+  SearchForm
 };

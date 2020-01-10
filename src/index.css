@@ -52,6 +52,10 @@ body {
   justify-content: space-evenly;
 }
 
+.grid-view div.card.ui {
+  margin: 1.25rem;
+}
+
 
 /* .navWrapperDiv:hover {
   color: orange;

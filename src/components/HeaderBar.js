@@ -13,6 +13,7 @@ const HeaderDiv = styled.div`
 
 const HeaderText = styled.div`
   flex-grow: 2;
+  margin-left: 50px;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -23,6 +24,7 @@ const HeaderText = styled.div`
 function HeaderComponent() {
   return (
     <HeaderDiv>
+      <i className="material-icons">menu</i>
       <HeaderText>DevDesk Queue</HeaderText>
       <i className="material-icons">search</i>
     </HeaderDiv>
